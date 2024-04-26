@@ -71,5 +71,16 @@
       "unitTestRunner": "jest"
     }
   },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@vercel/remote-nx",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "token": "<token>",
+        "teamId": "<teamId>"
+      }
+    }
+  },
+
   "nxCloudAccessToken": "ZjVhZDc1NzYtYzQ2Yy00ZmExLWE1ODUtMzAyYzk4NWMxMGQzfHJlYWQtd3JpdGU="
 }
